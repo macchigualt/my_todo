@@ -16,8 +16,12 @@
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
-                "element": {"#": "list"}
+                "element": {"#": "list"},
+                "contentController": {"@": "rangeController"}
             }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
         },
         "title": {
             "prototype": "digit/ui/title.reel",
