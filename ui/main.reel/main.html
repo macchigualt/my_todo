@@ -13,13 +13,29 @@
                 "element": {"#": "main"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "addContent",
+                "handler": {"@": "rangeController"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
                 "enabled": true,
                 "label": "Nuovo Task"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
         },
         "list": {
             "prototype": "digit/ui/list.reel",
