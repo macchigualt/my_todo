@@ -13,6 +13,14 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Nuovo Task"
+            }
+        },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
@@ -35,7 +43,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
+        <h1 data-montage-id="title">
+
+        </h1>
         <ul data-montage-id="list">
             <li></li>
         </ul>
