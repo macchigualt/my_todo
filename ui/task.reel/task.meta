@@ -14,9 +14,13 @@
     "prototype": "montage/core/meta/module-blueprint",
     "properties": {
       "name": null,
+      "blueprintModule": {
+        "%": "ui/task.reel/task.meta"
+      },
       "parent": {"@": "blueprint_component_reference"},
       "propertyBlueprintGroups": {
-        "Task": []
+        "Task": [],
+        "Main": []
       },
       "module": {
         "%": "ui/task.reel"
