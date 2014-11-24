@@ -20,15 +20,6 @@
                 "handler": {"@": "rangeController"}
             }
         },
-        "badge": {
-            "prototype": "digit/ui/badge.reel",
-            "properties": {
-                "element": {"#": "badge"}
-            },
-            "bindings": {
-                "value": {"<-": "@rangeController.organizedContent.filter{!completed}.length."}
-            }
-        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -42,6 +33,15 @@
                     "listener": {"@": "actionEventListener"}
                 }
             ]
+        },
+        "badge": {
+            "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge"}
+            },
+            "bindings": {
+                "value": {"<-": "@rangeController.organizedContent.filter{!completed}.length."}
+            }
         },
         "list": {
             "prototype": "digit/ui/list.reel",
